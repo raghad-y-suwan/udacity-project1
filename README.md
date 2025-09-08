@@ -33,9 +33,8 @@ Server will run by default on:http://localhost:3000
 
 ## Endpoint
 Example:
-http://localhost:3000/api?filename=icelandwaterfall&width=400&height=400
 
-API endpoint responses (200, 400, 404 ,500)
+http://localhost:3000/images?filename=icelandwaterfall&width=400&height=400
 
 ---
 
