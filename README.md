@@ -30,6 +30,7 @@ Server will run by default on:http://localhost:3000
 
 ---
 
+
 ## Endpoint
 Example:
 http://localhost:3000/api?filename=icelandwaterfall&width=400&height=400
@@ -37,6 +38,7 @@ http://localhost:3000/api?filename=icelandwaterfall&width=400&height=400
 API endpoint responses (200, 400, 404 ,500)
 
 ---
+
 
 ## Scripts
 npm run test → Compile TypeScript to JavaScript & Run unit tests
