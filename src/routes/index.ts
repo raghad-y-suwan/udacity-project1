@@ -1,10 +1,8 @@
 import express from 'express';
 import fs from 'fs';
-
-const router = express.Router();
+import { promises as fsPromises } from 'fs';const router = express.Router();
 
 router.get('/', async (req, res) => {
-  //res.send('image routes');
 
   const filename = req.query.filename as string;
   const width = parseInt(req.query.width as string);
@@ -16,18 +14,20 @@ router.get('/', async (req, res) => {
         'this is image route if you want to resize its required provide filename, width, and height',
       );
   }
-
-  // res.status(200).send('Image processed successfully');
-
   const input = `images/full/${filename}.jpg`;
   const output = `images/thumb/${filename}_${width}x${height}.jpg`;
-  if (!fs.existsSync(input)) {
-    return res.status(404).send('this Image is  not found');
+  try {
+    await fsPromises.access(input);
+  } catch (err) {
+    return res.status(404).send('Image not found');
   }
 
-  if (fs.existsSync(output)) {
+  try {
+    await fsPromises.access(output);
     return res.status(200).sendFile(output, { root: '.' });
+  } catch (_) {
   }
+
   try {
     const processImage = (await import('../procceser/processor')).default;
     await processImage(input, output, width, height);

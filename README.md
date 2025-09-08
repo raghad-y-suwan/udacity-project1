@@ -24,9 +24,11 @@ npm install
 npm run build
 
 ### 4. Start the server
-npm run start
 
-Server will run by default on:http://localhost:3000
+DEBUG=app npm start
+
+
+app Server is running at http://localhost:3000 +0ms
 
 ---
 
@@ -40,13 +42,13 @@ http://localhost:3000/images?filename=icelandwaterfall&width=400&height=400
 
 
 ## Scripts
-npm run test → Compile TypeScript to JavaScript & Run unit tests
+npm run test          → Compile TypeScript to JavaScript & Run unit tests
 
-npm run start → Start the server with nodemon
+DEBUG=app npm start   → Start the server 
 
-npm run lint → Run ESLint
+npm run lint          → Run ESLint
 
-npm run format → Prettier checks
+npm run format        → Prettier checks
 
 ---
 

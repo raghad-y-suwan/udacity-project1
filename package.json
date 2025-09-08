@@ -15,6 +15,7 @@
   "author": "Raghad Suwan",
   "license": "ISC",
   "devDependencies": {
+    "@types/debug": "^4.1.12",
     "@types/express": "^5.0.3",
     "@types/jasmine": "^5.1.9",
     "@types/node": "^24.3.1",
@@ -24,15 +25,16 @@
     "eslint": "^9.35.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
-    "nodemon": "^3.1.10",
     "jasmine": "^5.10.0",
     "jasmine-spec-reporter": "^7.0.0",
-    "supertest": "^7.1.4",
+    "nodemon": "^3.1.10",
     "prettier": "^3.6.2",
+    "supertest": "^7.1.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   },
   "dependencies": {
+    "debug": "^4.4.1",
     "express": "^5.1.0",
     "sharp": "^0.34.3"
   }
