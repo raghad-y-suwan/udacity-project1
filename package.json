@@ -1,0 +1,39 @@
+{
+  "name": "udacity-project1",
+  "version": "1.0.0",
+  "description": "first project to udacity - image proccesing ",
+  "main": "index.js",
+  "scripts": {
+    "jasmine": "jasmine",
+    "lint": "eslint . --ext .ts,.js",
+    "lint:fix": "eslint . --ext .ts,.js --fix",
+    "format": "prettier --config .prettierrc \"**/*.{ts,js,json}\" --write",
+    "build": "npx tsc",
+    "start": "nodemon src/index.ts",
+    "test": "npm run build && npm run jasmine"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "jasmine": "^5.10.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "sharp": "^0.34.3",
+    "supertest": "^7.1.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/jasmine": "^5.1.9",
+    "@types/node": "^24.3.1",
+    "@types/supertest": "^6.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.42.0",
+    "@typescript-eslint/parser": "^8.42.0",
+    "eslint": "^9.35.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
