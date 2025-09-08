@@ -14,7 +14,7 @@ If the processed image already exists in the `thumb` folder, it will be returned
 ## 🚀 Installation & Setup
 
 ### 1. Clone the repository
-```bash
+
 git clone <your-repo-url>
 cd udacity-project1
 ###2. Install dependencies
