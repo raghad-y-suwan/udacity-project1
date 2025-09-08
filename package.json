@@ -1,26 +1,19 @@
 {
   "name": "udacity-project1",
   "version": "1.0.0",
-  "description": "first project to udacity - image proccesing ",
+  "description": "first udacity project - image proccesing ",
   "main": "index.js",
   "scripts": {
     "jasmine": "jasmine",
     "lint": "eslint . --ext .ts,.js",
-    "lint:fix": "eslint . --ext .ts,.js --fix",
     "format": "prettier --config .prettierrc \"**/*.{ts,js,json}\" --write",
     "build": "npx tsc",
-    "start": "nodemon src/index.ts",
+    "dev": "nodemon src/index.ts",
+    "start": "node build/index.js",
     "test": "npm run build && npm run jasmine"
   },
-  "author": "",
+  "author": "Raghad Suwan",
   "license": "ISC",
-  "dependencies": {
-    "express": "^5.1.0",
-    "jasmine": "^5.10.0",
-    "jasmine-spec-reporter": "^7.0.0",
-    "sharp": "^0.34.3",
-    "supertest": "^7.1.4"
-  },
   "devDependencies": {
     "@types/express": "^5.0.3",
     "@types/jasmine": "^5.1.9",
@@ -32,8 +25,15 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
     "nodemon": "^3.1.10",
+    "jasmine": "^5.10.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "supertest": "^7.1.4",
     "prettier": "^3.6.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "sharp": "^0.34.3"
   }
 }
